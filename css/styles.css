@@ -542,7 +542,7 @@ img {
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters-button:hover,
@@ -597,7 +597,7 @@ img {
 .list-portfolio-item {
   width: calc((100% - 48px) / 3);
   overflow: hidden;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .imeges-animations {
   display: block;
@@ -617,8 +617,8 @@ img {
   transform: translateY(0);
   
 }
-.list-portfolio-item:hover,
-.list-portfolio-item:focus {
+.imeges-animations:hover,
+.imeges-animations:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .project-taxt-animation {
