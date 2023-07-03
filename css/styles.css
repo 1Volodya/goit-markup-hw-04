@@ -188,18 +188,69 @@ ul {
   background: #404bbf;
 }
 /* ------------------modal----------------- */
-/* .backdrop.is-hiden {
-  
+.is-hiden {
+  /* visibility: hidden;
+  opacity: 0; */
   
 }
+
 .backdrop {
-
-  
-  
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(46, 47, 66, 0.40);
+  cursor: pointer;
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal {
 
-} */
+.modal {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 408px;
+  height: 584px;
+  border-radius: 4px;
+  background: #FCFCFC;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transform: translate(-50%, -50%);
+  cursor: default;
+}
+
+.backdrop.is-hiden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.icon-close {
+  position: absolute;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background-color: #E7E9FC;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-close:hover,
+.icon-close:focus {
+  background-color: #404bbf;
+}
+.icon-close-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
 
 
 
@@ -347,7 +398,8 @@ img {
 .team-icon-item {
   fill: var(--secondary-white-color);
 }
-.social .link:hover {
+.social .link:hover,
+.social .link:focus {
   background-color: #404bbf;
 }
 
