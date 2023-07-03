@@ -188,11 +188,7 @@ ul {
   background: #404bbf;
 }
 /* ------------------modal----------------- */
-.is-hiden {
-  /* visibility: hidden;
-  opacity: 0; */
-  
-}
+
 
 .backdrop {
   position: fixed;
@@ -631,6 +627,4 @@ img {
   height: 40px;
   background-color: #03a9f4 ;
 }
-.social {
-  
-}
+
