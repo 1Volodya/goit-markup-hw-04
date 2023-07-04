@@ -87,7 +87,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
@@ -617,8 +617,8 @@ img {
   transform: translateY(0);
   
 }
-.imeges-animations:hover,
-.imeges-animations:focus {
+.list-portfolio-item:hover,
+.list-portfolio-item:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .project-taxt-animation {
